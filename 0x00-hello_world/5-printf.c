@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
+ * main - this is the entry point
  *
- * Description: main is the entry point of all c programs
- * Return: always 0 (success)
- *
+ * Return: 0 means success
  */
 int main(void)
 {
