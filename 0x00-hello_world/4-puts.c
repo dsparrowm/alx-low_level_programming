@@ -1,12 +1,12 @@
 #include <stdio.h>
 /*
- *
- * This function prints the below text
+ *main - entry point
+ *return 0 as success
  *
  */
 
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
