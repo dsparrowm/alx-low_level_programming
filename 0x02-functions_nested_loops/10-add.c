@@ -9,7 +9,5 @@
  */
 int add(int x, int i)
 {
-	int z = x + i;
-
-	return (z);
+	return (x + i);
 }
