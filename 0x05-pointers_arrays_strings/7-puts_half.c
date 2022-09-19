@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-
 /**
  * puts_half - prints half of the numbers
  * @str: character to print
@@ -9,16 +7,25 @@
  */
 void puts_half(char *str)
 {
-	int n = strlen(str) / 2;
-	int len = strlen(str);
+	int n;
+	int i;
 
-	if (strlen(str) % 2 != 0)
+	while (str[n])
 	{
-		int n = (strlen(str) - 1) / 2;
-	}
-	while (n <= len)
-	{
-		_putchar(str[n]);
 		n++;
 	}
+	if (n % 2 == 1)
+	{
+		i = (n - 1) / 2;
+		i = n - i;
+	}
+	else
+	{
+		i = n / 2;
+	}
+	for (; str[i]; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
