@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts - prints every other number
@@ -9,7 +10,7 @@
 void puts2(char *str)
 {
 	int i;
-	int len = sizeof(str) / sizeof(str[0]);
+	int len = strlen(str);
 
 	for(i = 0; i < len; i++)
 	{
