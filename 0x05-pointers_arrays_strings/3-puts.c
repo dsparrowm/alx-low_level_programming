@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts - prints a syring 
+ * _puts - prints a syring
  * @str: string to be printed
  * Return: void
  */
