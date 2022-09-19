@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts - prints every other number
+ * puts2 - prints every other number
  * @str: strimg to print
  *
  * Return: void
