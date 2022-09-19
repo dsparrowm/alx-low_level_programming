@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <publib.h>
 #include <stdio.h>
 
 /**
