@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - resets an integer to 98
- * @*n: the integer to reset
+ * @n: the integer to reset
  *
  * Retirn: void
  */
