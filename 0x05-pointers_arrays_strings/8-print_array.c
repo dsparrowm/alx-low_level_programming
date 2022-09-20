@@ -14,7 +14,14 @@ void print_array(int *a, int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		printf("%d", a[i]);
+		while (i < n)
+		{
+			printf("%d, ", a[i]);
+		}
+		if (i == n)
+		{
+			primtf("%d", a[i]);
+		}
 	}
 	printf("\n");
 }
