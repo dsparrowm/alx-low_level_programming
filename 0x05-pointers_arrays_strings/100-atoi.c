@@ -10,6 +10,7 @@ int _atoi(char *s)
 {
 	unsigned int i = 0, z = 0, p = 0;
 	unsigned int h = 1, w = 1, n;
+
 	while (s[i])
 	{
 		if (z > 0 && (s[i] < '0' || s[i] > '9'))
