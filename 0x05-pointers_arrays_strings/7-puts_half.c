@@ -1,33 +1,33 @@
 #include "main.h"
 
 /**
- * puts_half - prints half of the numbers
- * @str: character to print
+ * puts_half - main function.
+ * @str: Pointer, the string of numbers to print.
  *
- * Return: void
+ * Return: none.
  */
-void puts_half(char *str)
-{	
-	int len, n, i;
 
-	len = 0;
-	while (str[len] != '\0')
+void puts_half(char *str)
+{
+	int n;
+	int i;
+
+	while (str[n])
 	{
-		len++;
+		n++;
 	}
-	if (len % 2 == 0)
+	if (n % 2 == 1)
 	{
-		for (i = len / 2; str[i] != '\0'; i++)
-		{
-			_putchar(str[i]);
-		}
+		i = (n - 1) / 2;
+		i = n - i;
 	}
-       	else if (len % 2)
+	else
 	{
-		for ( = (len - 1) / 2; n < len - 1; n++)
-		{
-			_putchar(str[n + 1]);
-		}
+		i = n / 2;
+	}
+	for (; str[i]; i++)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
