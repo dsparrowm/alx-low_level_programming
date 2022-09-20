@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * puts_half - main function.
  * @str: Pointer, the string of numbers to print.
