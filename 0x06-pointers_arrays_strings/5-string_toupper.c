@@ -10,10 +10,12 @@
 char *string_toupper(char *str)
 {
 	int i;
-	int n = sizeof(str) / sizeof(str[0]);
-
-	for (i = 0; i < n; i++)
+	
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(isupper(str[i]));
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] -= 32;
+		}
 	}
 }
