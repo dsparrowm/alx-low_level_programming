@@ -1,6 +1,4 @@
 #include "main.h"
-#include <ctype.h>
-
 /**
  * string_toupper - converts to upper case
  * @str: string
