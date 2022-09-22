@@ -11,8 +11,8 @@
 void print_buffer(char *b, int size)
 {
 	int o, j, i;
-	o = 0;
 
+	o = 0;
 	if (size <= 0)
 	{
 		printf("\n");
