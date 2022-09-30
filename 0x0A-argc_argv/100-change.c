@@ -39,6 +39,11 @@ int main(int argc, char *argv[])
 				num -= 5;
 				cents++;
 			}
+			while (num - 2 >= 0)
+			{
+				num -= 2;
+				cents++;
+			}
 			while (num - 1 >= 0)
 			{
 				num -= 1;
