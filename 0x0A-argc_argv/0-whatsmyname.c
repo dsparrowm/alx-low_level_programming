@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - entry point for my program
  * @argc: number of arguments passed by the user at the command line
@@ -9,7 +8,6 @@
  */
 int main(__attribute__((unused))int argc, char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
-
+	printf("%s\n", argv[0]);
 	return (0);
 }
