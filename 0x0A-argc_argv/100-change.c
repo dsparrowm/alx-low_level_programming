@@ -9,6 +9,7 @@
 int isInteger(const char *s)
 {
 	int i = 0;
+
 	while (s[i] != '\0')
 	{
 		if (s[i] < '0' || s[i] > '9')
@@ -37,6 +38,7 @@ int main(int argc, char const *argv[])
 	if (isInteger(argv[1]))
 	{
 		i = atoi(argv[1]);
+
 		while (i > 0 && coin <= 4)
 		{
 			if (i >= coins[coin])
