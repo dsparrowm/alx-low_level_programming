@@ -11,10 +11,10 @@ char *_strdup(char *str)
 {
 	char *str2;
 
+	if (str == NULL)
+		return (NULL);
 	str2 = strdup(str);
 	if (str2 == NULL)
-		return (NULL);
-	if (str == NULL)
 		return (NULL);
 	return (str2);
 }
