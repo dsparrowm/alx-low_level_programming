@@ -1,4 +1,4 @@
-#include "main.h"
+#iinclude "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -83,7 +83,6 @@ int get_digit(char c)
 		printf("Error\n");
 		exit(98);
 	}
-
 	return (digit);
 }
 
@@ -111,6 +110,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	}
 
 	prod--;
+
 	while (zeroes--)
 	{
 		*prod = '0';
@@ -150,7 +150,6 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 	while (*(next_prod + 1))
 		next_prod++;
-
 	for (; *final_prod != 'x'; final_prod--)
 	{
 		num = (*final_prod - '0') + (*next_prod - '0');
@@ -165,7 +164,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 	{
 		num = (*next_prod - '0');
-		num += tens;
+			num += tens;
 		*final_prod = (num % 10) + '0';
 		tens = num / 10;
 
