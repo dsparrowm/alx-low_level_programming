@@ -5,18 +5,17 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
+
+#include <stdarg.h>
 /**
- * struct format_struct - format-type class
- * @format: format identifier
- * @fmt_print_func: pointer to function that prints in the format of @format
+ * struct print - print type with corresponding print function
+ * @t: print type
+ * @f: print function
  */
-
-struct format_struct
+typedef struct print
 {
-	char format;
-	void (*fmt_print_func)(va_list *arg_list);
-};
-
-typedef struct format_struct format_struct_ptr;
+	char *t;
+	void (*f)(va_list);
+} print_t;
 
 #endif
