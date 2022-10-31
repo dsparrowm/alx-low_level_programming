@@ -4,6 +4,8 @@
  * read_textfile - function to read a certain byte of file
  * @filename: name of the file to read
  * @letters: number of letters to read from the file
+ *
+ * Return: number of letters that can be printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
